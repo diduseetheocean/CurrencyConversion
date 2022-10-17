@@ -3,7 +3,6 @@ package test.currency;
 import main.currency.CurrencyConverter;
 import main.currency.Transaction;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -14,20 +13,29 @@ import java.util.Map;
 class CurrencyConverterTest {
 
     @Test
-    public void testCurrencyConverter() {
+    public void testCompleteCurrencyList_AssertPrebookingItemsGotRemoved() {
         CurrencyConverter cc = new CurrencyConverter();
-        cc.calcCurrencies(transactions, currencyConversionMap);
+        List<Transaction> newTransactions = cc.completeCurrencyList(transactions, currencyConversionMap);
 
-        Assertions.assertEquals(97.17, transactions.get(0).currencyMap.get("USD"));
-        Assertions.assertEquals(14363.0, transactions.get(0).currencyMap.get("JPY"));
-        Assertions.assertEquals(86.823, transactions.get(0).currencyMap.get("GBP"));
-        Assertions.assertEquals(100.0, transactions.get(1).currencyMap.get("USD"));
-        Assertions.assertEquals(14781.31110425028, transactions.get(1).currencyMap.get("JPY"));
-        Assertions.assertEquals(89.35165174436554, transactions.get(1).currencyMap.get("GBP"));
-        Assertions.assertEquals(102.91242152927857, transactions.get(1).currencyMap.get("EUR"));
+        Assertions.assertEquals(4, newTransactions.size());
+    }
+
+    @Test
+    public void testCompleteCurrencyList_AssertCorrectConversions() {
+        CurrencyConverter cc = new CurrencyConverter();
+        List<Transaction> newTransactions = cc.completeCurrencyList(transactions, currencyConversionMap);
+
+        Assertions.assertEquals(97.17, newTransactions.get(0).currencyMap.get("USD"));
+        Assertions.assertEquals(14363.0, newTransactions.get(0).currencyMap.get("JPY"));
+        Assertions.assertEquals(86.823, newTransactions.get(0).currencyMap.get("GBP"));
+        Assertions.assertEquals(100.0, newTransactions.get(1).currencyMap.get("USD"));
+        Assertions.assertEquals(14781.31110425028, newTransactions.get(1).currencyMap.get("JPY"));
+        Assertions.assertEquals(89.35165174436554, newTransactions.get(1).currencyMap.get("GBP"));
+        Assertions.assertEquals(102.91242152927857, newTransactions.get(1).currencyMap.get("EUR"));
     }
 
     private List<Transaction> transactions = new ArrayList() {{
+        add(new Transaction("BRL", 100, true));
         add(new Transaction("EUR", 100, false));
         add(new Transaction("USD", 100, false));
         add(new Transaction("JPY", 100, false));
@@ -35,6 +43,7 @@ class CurrencyConverterTest {
     }};
 
     private Map<String, Double> currencyConversionMap = new HashMap<String, Double>() {{
+        put("EUR", 1.0);
         put("USD", 0.9717);
         put("JPY", 143.63);
         put("BGN", 1.9558);

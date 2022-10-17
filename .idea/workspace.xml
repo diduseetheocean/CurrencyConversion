@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4a5cbae-0c72-4003-bfa3-015a9d48fd50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/currency/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/currency/CurrencyConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/currency/CurrencyConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/currency/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/currency/TransactionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,20 +30,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Projects/IntelliJ/CurrencyConversion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/IntelliJ/CurrencyConversion&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\IntelliJ\CurrencyConversion\src\currency" />
@@ -54,7 +56,38 @@
       <recent name="currency" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CurrencyConverterTest">
+    <configuration name="CurrencyConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CurrencyConversion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.currency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.currency" />
+      <option name="MAIN_CLASS_NAME" value="test.currency.CurrencyConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyConverterTest.testCompleteCurrencyList_AssertPrebookingItemsGotRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CurrencyConversion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.currency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.currency" />
+      <option name="MAIN_CLASS_NAME" value="test.currency.CurrencyConverterTest" />
+      <option name="METHOD_NAME" value="testCompleteCurrencyList_AssertPrebookingItemsGotRemoved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CurrencyConverterTest.testCurrencyConverter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CurrencyConversion" />
       <extension name="coverage">
@@ -73,6 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CurrencyConverterTest" />
+        <item itemvalue="JUnit.CurrencyConverterTest.testCompleteCurrencyList_AssertPrebookingItemsGotRemoved" />
         <item itemvalue="JUnit.CurrencyConverterTest.testCurrencyConverter" />
       </list>
     </recent_temporary>
